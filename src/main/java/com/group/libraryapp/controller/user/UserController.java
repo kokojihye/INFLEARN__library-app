@@ -15,9 +15,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@RestController //진입점 처리
+@RestController //UserController 처음 만들었기 때문에 진입점 처리(@RestController 어노테이션)
 public class UserController {
-
     private final JdbcTemplate jdbcTemplate;
 
     public UserController(JdbcTemplate jdbcTemplate){
